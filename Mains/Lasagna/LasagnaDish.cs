@@ -7,6 +7,11 @@ namespace ModdedKitchen.Dishes
 {
     class LasagnaDish : ModDish
     {
+        public LasagnaDish()
+        {
+            Difficulty = 5;            
+        }
+
         public override string UniqueNameID => "Lasagna Dish";
         public override DishType Type => DishType.Base;
         public override GameObject DisplayPrefab => Main.bundle.LoadAsset<GameObject>("LasagnaPortion");

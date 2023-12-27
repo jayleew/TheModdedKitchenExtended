@@ -8,6 +8,11 @@ namespace ModdedKitchen.Mains.Lasagna
 {
     class PlatedLasagna : CustomItemGroup
     {
+        public PlatedLasagna()
+        {
+            RewardOverride = 10;            
+        }
+
         public override string UniqueNameID => "Plated Lasagna";
         public override GameObject Prefab => Main.bundle.LoadAsset<GameObject>("PlatedLasagna");
         public override ItemCategory ItemCategory => ItemCategory.Generic;
@@ -49,7 +54,7 @@ namespace ModdedKitchen.Mains.Lasagna
             materials[2] = MaterialUtils.GetExistingMaterial("Plate - Ring");
             materials[3] = MaterialUtils.GetExistingMaterial("Plate - Ring");
             materials[4] = MaterialUtils.GetExistingMaterial("Plate - Ring");
-            MaterialUtils.ApplyMaterial(Prefab, "Plate", materials);
+            MaterialUtils.ApplyMaterial(Prefab, "Plate", materials);            
         }
     }
 }

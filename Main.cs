@@ -288,7 +288,7 @@ namespace ModdedKitchen
             AddGameDataObject<MustardDish>();
             AddGameDataObject<AdditionalToppings>();
 
-            AddGameDataObject<ChiliXTDish>();
+            //AddGameDataObject<ChiliXTDish>(); too hard to tell what is being ordered.
             AddGameDataObject<ChiliDogKetchupDish>();
 
 
@@ -413,7 +413,7 @@ namespace ModdedKitchen
             // Lasagna
             AddGameDataObject<LasagnaPortion>();
             AddGameDataObject<CookedLasagna>();
-            AddGameDataObject<UncookedLasagna>();
+            AddGameDataObject<UncookedLasagna>();            
             AddGameDataObject<PlatedLasagna>();
 
             Events.BuildGameDataEvent += delegate (object s, BuildGameDataEventArgs args)
